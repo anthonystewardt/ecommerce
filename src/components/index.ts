@@ -10,3 +10,7 @@ export * from "./ui/checksteps/CheckSteps";
 
 
 export * from "./ui/footer/Footer";
+
+
+// layouts
+export * from "./layout/NextuiProvider";

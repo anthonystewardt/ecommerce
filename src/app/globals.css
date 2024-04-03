@@ -33,7 +33,7 @@ body {
 
 /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
 
-div::-webkit-scrollbar {
+/* div::-webkit-scrollbar {
     -webkit-appearance: none;
 }
 
@@ -78,7 +78,7 @@ div::-webkit-scrollbar-track {
 
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-}
+} */
 
 
 .btn-primary {
@@ -95,3 +95,7 @@ div::-webkit-scrollbar-track {
 
 
 
+/* gradient login */
+.gradient-login {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const {nextui} = require("@nextui-org/react");
 
 const config: Config = {
   content: [
@@ -7,6 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     // "./src/**/**/*.{js,ts,jsx,tsx,mdx}",
     "node_modules/flowbite-react/lib/esm/**/*.js",
+        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -15,9 +17,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "bg-notfound": "url('/imgs/404img.png')",
+        "bg-login": "url('/bglogin.png')"
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), nextui()],
 };
 export default config;

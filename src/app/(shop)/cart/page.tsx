@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import { redirect } from "next/navigation";
 
 import { QuantitySelector, Title } from "@/components";
 import { initialData } from "@/seed/seed";
@@ -78,6 +77,13 @@ export default function CartPage () {
 
               <span className="mt-5 text-2xl">Total:</span>
               <span className="mt-5 text-2xl text-right">$ 100</span>
+              <div className="text-wrap  w-full col-span-2 mt-3">
+                <span className="text-sm font-semibold">
+                  Al hacer clic en &quot;Checkout&quot;, aceptas nuestros{" "}
+                  <span className="underline">términos y condiciones</span> y{" "}
+                  <span className="underline">política de privacidad</span>{" "}
+                </span>
+              </div>
             </div>
 
             <div className="mt-5 mb-2 w-full">

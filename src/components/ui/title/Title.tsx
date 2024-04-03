@@ -1,5 +1,7 @@
+"use client";
+import react from "react";
 import { titleFont } from "@/config/fonts";
-
+import { redirect } from "next/navigation";
 interface Props {
   title: string;
   subtitle?: string;
@@ -7,8 +9,14 @@ interface Props {
 }
 
 export const Title = ({ title, subtitle, className }: Props) => {
+
+  const goToHome = () => {
+    console.log('redirecting to home')
+    redirect("/");
+  }
+
   return (
-    <div className={`mt-3 ${className}`}>
+    <div className={`mt-3 ${className} cursor-pointer `} onClick={() => goToHome()} >
       <h1
         className={`${titleFont.className} antialiased text-4xl font-semibold my-7`}
       >

@@ -1,4 +1,5 @@
-import { Category } from "@/interfaces";
+import { Category } from '../interfaces/category/category.interface';
+
 
 interface SeedProduct {
     description: string;
@@ -17,6 +18,7 @@ type ValidSizes = 'XS'|'S'|'M'|'L'|'XL'|'XXL'|'XXXL';
 type ValidTypes = 'shirts'|'pants'|'hoodies'|'hats';
 
 interface SeedData {
+    categories: String[],
     products: SeedProduct[],
 }
 
@@ -59,6 +61,7 @@ export const categoryMap: Category[] = [
 
 
 export const initialData: SeedData = {
+    categories: ['Shirts','Pants','Hoodies','Hats'],
     products: [
         {
             description: "Introducing the Tesla Chill Collection. The Men’s Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.",
