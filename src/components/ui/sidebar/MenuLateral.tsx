@@ -53,14 +53,14 @@ const MenuLateral = () => {
           <input
             type="text"
             placeholder="Buscar"
-            className="w-full bg-gray-50 rounded pl-10 py-1 top-24 pr-10 border-b-2 text-xl border-gray-200 focus:outline-none focus:border-blue-500"
+            className="w-full bg-gray-50 rounded pl-10 py-1 top-24 pr-10 border-b-2 text-xl border-zinc-800 focus:outline-none focus:border-blue-500"
           />
         </div>
 
         <div className="mt-10 flex flex-col gap-3">
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100 text-zinc-800 rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoPersonOutline size={25} />
             Perfil
@@ -68,7 +68,7 @@ const MenuLateral = () => {
 
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100 text-zinc-800 rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoTicketOutline size={25} />
             Ordenes
@@ -76,7 +76,7 @@ const MenuLateral = () => {
 
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100 text-zinc-800 rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoLogInOutline size={25} />
             Ingresar
@@ -84,7 +84,7 @@ const MenuLateral = () => {
 
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100  text-zinc-800 rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoLogOutOutline size={25} />
             Salir
@@ -94,21 +94,21 @@ const MenuLateral = () => {
         <div className="flex flex-col gap-3">
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100 text-zinc-800 rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoShirtOutline size={25} />
             Productos
           </Link>
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100 text-zinc-800  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoTicketOutline size={25} />
             Ordenes
           </Link>
           <Link
             href=""
-            className="px-4 py-2 hover:bg-gray-100  rounded-lg transition ease-out flex items-center gap-3 font-semibold"
+            className="px-4 py-2 hover:bg-gray-100 text-zinc-800 rounded-lg transition ease-out flex items-center gap-3 font-semibold"
           >
             <IoPeopleOutline size={25} />
             Usuarios

@@ -39,27 +39,28 @@ const ProductPage = ({ params }: Props) => {
 
       {/* Detalles */}
       <div className="col-span-1 px-5  whitespace-normal">
-        <h1 className={`  antialiased font-bold text-xl`}>
+        <h1 className={`  antialiased font-bold text-xl text-zinc-900`}>
           {product.title}
         </h1>
-        <p className="text-lg mb-5">${product.price}</p>
+        <p className="text-lg mb-5 text-zinc-800">${product.price}</p>
 
         {/* Selector de Tallas */}
         <SizeSelector
           selectedSize={product.sizes[1]}
           availableSizes={product.sizes}
+
         />
 
         {/* Selector de Cantidad */}
         <QuantitySelector quantity={2} />
 
         {/* Button */}
-        <button className="btn-primary my-5">Agregar al carrito</button>
+        <button className="btn-primary my-5 text-zinc-800">Agregar al carrito</button>
 
         {/* Descripción */}
-        <h3 className="font-bold text-sm">Descripción</h3>
+        <h3 className="font-bold text-sm text-slate-700">Descripción</h3>
         <div className="  whitespace-normal">
-          <p className="inline">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p className="inline text-slate-700">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         {/* <p className="font-light">{product.description}</p> */}
       </div>

@@ -113,12 +113,14 @@ const DetailsPayment = () => {
               </div>
             ))} */}
 
-              <h2 className="text-1xl font-semibold">
+              <h2 className="text-1xl font-semibold
+                text-slate-700"
+              >
                 Información de Contacto
               </h2>
               <div className="grid grid-cols-2 gap-3 mt-2">
                 <div className="flex flex-col gap-1">
-                  <label htmlFor="name" className="text-sm">
+                  <label htmlFor="name" className="text-sm text-zinc-700">
                     Nombres
                   </label>
                   <input
@@ -131,7 +133,7 @@ const DetailsPayment = () => {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700 ">
                     Apellidos
                   </label>
                   <input
@@ -143,7 +145,7 @@ const DetailsPayment = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-1 col-span-2">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700 ">
                     Número de Teléfono
                   </label>
                   <input
@@ -155,7 +157,7 @@ const DetailsPayment = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-1 col-span-2">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700">
                     Email
                   </label>
                   <input
@@ -169,10 +171,10 @@ const DetailsPayment = () => {
               </div>
             </div>
             <div className="flex mt-5 flex-col border-2 border-slate-700 border-opacity-90 p-3 ">
-              <h2 className="text-1xl font-semibold">Dirección de Envío</h2>
+              <h2 className="text-1xl font-semibold text-zinc-800 ">Dirección de Envío</h2>
               <div className="grid grid-cols-2 gap-3 mt-2">
                 <div className="flex flex-col gap-1 col-span-2">
-                  <label htmlFor="name" className="text-sm">
+                  <label htmlFor="name" className="text-sm text-zinc-700">
                     Dirección
                   </label>
                   <input
@@ -185,7 +187,7 @@ const DetailsPayment = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 col-span-2">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700">
                     País
                   </label>
                   {/* <input
@@ -209,7 +211,7 @@ const DetailsPayment = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-1 col-span-2">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700">
                     Ciudad / Distrito
                   </label>
                   <input
@@ -224,10 +226,10 @@ const DetailsPayment = () => {
             </div>
 
             <div className="flex mt-5 flex-col border-2 border-slate-700 border-opacity-90 p-3 ">
-              <h2 className="text-1xl font-semibold">Método de Pago</h2>
+              <h2 className="text-1xl font-semibold text-zinc-800">Método de Pago</h2>
               <div className="grid grid-cols-2 gap-3 mt-2">
                 <div className="flex flex-col gap-1 col-span-2">
-                  <label htmlFor="name" className="text-sm">
+                  <label htmlFor="name" className="text-sm text-zinc-700">
                     Número de Tarjeta
                   </label>
                   <input
@@ -242,7 +244,7 @@ const DetailsPayment = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 col-span-1">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700">
                     MM/YY
                   </label>
                   <input
@@ -256,7 +258,7 @@ const DetailsPayment = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-1 col-span-1">
-                  <label htmlFor="email" className="text-sm">
+                  <label htmlFor="email" className="text-sm text-zinc-700">
                     CVC
                   </label>
                   <input
@@ -273,20 +275,20 @@ const DetailsPayment = () => {
 
           {/* Checkout - Resumen de orden */}
           <div className="bg-white rounded-sm border-2 border-gray-950 shadow-xl p-7 h-fit">
-            <h2 className="text-2xl mb-2">Resumen de orden</h2>
+            <h2 className="text-2xl mb-2 text-zinc-900">Resumen de orden</h2>
 
             <div className="grid grid-cols-2">
-              <span>No. Productos</span>
-              <span className="text-right">3 artículos</span>
+              <span className="text-zinc-900">No. Productos</span>
+              <span className="text-right text-zinc-700">3 artículos</span>
 
-              <span>Subtotal</span>
-              <span className="text-right">$ 100</span>
+              <span className="text-zinc-900">Subtotal</span>
+              <span className="text-right text-zinc-700">$ 100</span>
 
-              <span>Impuestos (15%)</span>
-              <span className="text-right">$ 100</span>
+              <span className="text-zinc-900">Impuestos (15%)</span>
+              <span className="text-right text-zinc-700">$ 100</span>
 
-              <span className="mt-5 text-2xl">Total:</span>
-              <span className="mt-5 text-2xl text-right">$ 100</span>
+              <span className="mt-5 text-2xl text-zinc-900 ">Total:</span>
+              <span className="mt-5 text-2xl text-right text-zinc-700">$ 100</span>
             </div>
 
             <div className="mt-5 mb-2 w-full">

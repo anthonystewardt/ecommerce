@@ -19,7 +19,7 @@ export default function CartPage () {
     <div className="flex justify-center items-center mb-72 px-10 sm:px-0">
       <div className="flex flex-col w-[1000px]">
         <div className="flex justify-center">
-          <Title title="Carrito" />
+          <Title title="Carrito" subtitle="Detalles de su compra" />
         </div>
 
         {/* Pasos */}
@@ -30,8 +30,8 @@ export default function CartPage () {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
           {/* Carrito */}
           <div className="flex flex-col mt-5">
-            <span className="text-xl">Agregar más items</span>
-            <Link href="/" className="underline mb-5">
+            <span className="text-xl text-zinc-800">Agregar más items</span>
+            <Link href="/" className="underline mb-5 text-zinc-900">
               Continúa comprando
             </Link>
 
@@ -51,11 +51,11 @@ export default function CartPage () {
                 />
 
                 <div>
-                  <p>{product.title}</p>
-                  <p>${product.price}</p>
+                  <p className="text-zinc-700">{product.title}</p>
+                  <p className="text-zinc-700">${product.price}</p>
                   <QuantitySelector quantity={3} />
 
-                  <button className="underline mt-3">Remover</button>
+                  <button className="underline mt-3 text-zinc-950">Remover</button>
                 </div>
               </div>
             ))}
@@ -63,25 +63,25 @@ export default function CartPage () {
 
           {/* Checkout - Resumen de orden */}
           <div className="bg-white rounded-sm border-2 border-gray-950 shadow-xl p-7 h-fit">
-            <h2 className="text-2xl mb-2">Resumen de orden</h2>
+            <h2 className="text-2xl mb-2 text-slate-950">Resumen de orden</h2>
 
             <div className="grid grid-cols-2">
-              <span>No. Productos</span>
-              <span className="text-right">3 artículos</span>
+              <span className="text-zinc-700">No. Productos</span>
+              <span className="text-right text-zinc-700">3 artículos</span>
 
-              <span>Subtotal</span>
-              <span className="text-right">$ 100</span>
+              <span className="text-zinc-900">Subtotal</span>
+              <span className="text-right text-zinc-700">$ 100</span>
 
-              <span>Impuestos (15%)</span>
-              <span className="text-right">$ 100</span>
+              <span className="text-zinc-900">Impuestos (15%)</span>
+              <span className="text-right text-zinc-700">$ 100</span>
 
-              <span className="mt-5 text-2xl">Total:</span>
-              <span className="mt-5 text-2xl text-right">$ 100</span>
+              <span className="mt-5 text-2xl text-zinc-900">Total:</span>
+              <span className="mt-5 text-2xl text-right text-zinc-700">$ 100</span>
               <div className="text-wrap  w-full col-span-2 mt-3">
-                <span className="text-sm font-semibold">
+                <span className="text-sm font-semibold text-zinc-900">
                   Al hacer clic en &quot;Checkout&quot;, aceptas nuestros{" "}
-                  <span className="underline">términos y condiciones</span> y{" "}
-                  <span className="underline">política de privacidad</span>{" "}
+                  <span className="underline text-zinc-600">términos y condiciones</span> y{" "}
+                  <span className="underline text-zinc-600">política de privacidad</span>{" "}
                 </span>
               </div>
             </div>

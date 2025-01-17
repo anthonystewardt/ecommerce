@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className=" text-white flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="">
-            <Title title="Tienda Yura" />
+            <Title color="text-white" title="Tienda Yura" />
           </div>
 
           <div className="">|</div>

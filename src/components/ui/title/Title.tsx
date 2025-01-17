@@ -6,9 +6,10 @@ interface Props {
   title: string;
   subtitle?: string;
   className?: string;
+  color?: string;
 }
 
-export const Title = ({ title, subtitle, className }: Props) => {
+export const Title = ({ title, subtitle, className, color = "text-zinc-800" }: Props) => {
 
   const goToHome = () => {
     console.log('redirecting to home')
@@ -18,12 +19,12 @@ export const Title = ({ title, subtitle, className }: Props) => {
   return (
     <div className={`mt-3 ${className} cursor-pointer `} onClick={() => goToHome()} >
       <h1
-        className={`${titleFont.className} antialiased text-4xl font-semibold my-7`}
+        className={`${titleFont.className} antialiased text-4xl text-center ${color} font-semibold my-7`}
       >
         {title}
       </h1>
 
-      {subtitle && <h3 className="text-xl mb-5">{subtitle}</h3>}
+      {subtitle && <h3 className="text-xl mb-5 text-center text-slate-700">{subtitle}</h3>}
     </div>
   );
 };

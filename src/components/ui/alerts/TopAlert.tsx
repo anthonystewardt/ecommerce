@@ -6,20 +6,20 @@ import MenuLateral from "../sidebar/MenuLateral";
 const TopAlert = () => {
   return (
     <>
-      <section className="md:flex items-center  hidden justify-between py-3 lg:px-20 px-5 bg-slate-100">
+      <section className="md:flex items-center  hidden justify-between py-3 lg:px-20 px-5 dark:bg-slate-100 bg-slate-100">
         <div className="text-sm">
-          <h1>¡Bienvenidos a Tienda Yura!</h1>
+          <h1 className="text-zinc-800">¡Bienvenidos a Tienda Yura!</h1>
         </div>
         <div className="flex items-center gap-5 text-sm">
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-2 text-zinc-800">
             <IoLocationOutline size={20} color="#38bdf8" />
             Delivery a todo el Perú
           </span>
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-2 text-zinc-800">
             <CiDeliveryTruck size={20} color="#38bdf8" />
             Rastrea tu orden
           </span>
-          <span className="flex items-center gap-2">
+          <span className="flex items-center gap-2 text-zinc-800">
             <BiSolidOffer size={20} color="#38bdf8" />
             Ofertas
           </span>

@@ -20,17 +20,19 @@ export const QuantitySelector = ({ quantity }: Props) => {
     <div className="flex ">
       <button
         onClick={() => onQuantityChanged(-1)}
-        className="active:scale-95 transition ease"
+        className="active:scale-95 transition ease text-zinc-900"
       >
         <IoRemoveCircleOutline size={30} />
       </button>
 
-      <span className="w-20 mx-3 px-5 bg-gray-100 text-center rounded">
+      <span className="w-20 mx-3 px-5 bg-gray-200 text-zinc-800 text-center flex items-center justify-center rounded">
         {count}
       </span>
 
       <button
-        className="active:scale-95 transition ease"
+        className="active:scale-95 transition ease
+        text-zinc-900"
+        
         onClick={() => onQuantityChanged(+1)}
       >
         <IoAddCircleOutline size={30} />

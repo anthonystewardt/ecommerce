@@ -12,7 +12,7 @@ const CheckSteps = ({ step2, step3 }: Props) => {
         <span className="text-2xl bg-slate-950  w-[40px] h-[40px] flex items-center justify-center font-bold text-white rounded-full">
           1
         </span>
-        <span className="text-lg">Carro de la compra</span>
+        <span className="text-lg text-zinc-700">Carro de la compra</span>
       </div>
 
       <div className="flex items-center gap-2">
@@ -23,7 +23,7 @@ const CheckSteps = ({ step2, step3 }: Props) => {
         >
           2
         </span>
-        <span className="text-lg">Detalles de pago</span>
+        <span className="text-lg text-zinc-700">Detalles de pago</span>
       </div>
 
       <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ const CheckSteps = ({ step2, step3 }: Props) => {
         >
           3
         </span>
-        <span className="text-lg">Orden completada</span>
+        <span className="text-lg text-zinc-700">Orden completada</span>
       </div>
     </div>
   );

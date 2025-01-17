@@ -9,13 +9,13 @@ interface Props {
 export const SizeSelector = ({ selectedSize, availableSizes }: Props) => {
   return (
     <div className="my-5">
-      <h3 className="font-bold mb-4">Tallas disponibles</h3>
+      <h3 className="font-bold mb-4 text-zinc-700">Tallas disponibles</h3>
 
       <div className="flex">
         {availableSizes.map((size) => (
           <button
             key={size}
-            className={clsx("mx-2 hover:underline-offset-2 text-lg p-2 bg-gray-50 font-bold rounded-md", {
+            className={clsx("mx-2 text-zinc-800 hover:underline-offset-2 border-1 border-zinc-700 text-lg p-2 bg-gray-50 font-bold rounded-md", {
               underline: size === selectedSize,
             })}
           >

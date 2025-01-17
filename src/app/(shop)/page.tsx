@@ -15,7 +15,6 @@ const categoryList = categoryMap;
 export default function Home() {
   return (
     <main className="">
-      
       <CarouselHero />
       <section className="xl:my-16 my-5">
         <TitleTab title="Los productos más vendidos" />
